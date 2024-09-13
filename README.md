@@ -23,6 +23,6 @@
   
 <br/>
 
-![alt text](/src/assets/img/task5_preview.gif)
+![alt text](/src/assets/img/task5_preview2.gif)
 
 
