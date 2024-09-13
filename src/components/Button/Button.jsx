@@ -1,7 +1,7 @@
 
-import useButtonClick from "@/hooks/ButtonClick/useButtonClick.jsx";
-import changeButtonState from "@/utils/changeButtonState.jsx";
-import handleButtonText from "@/utils/handleButtonText";
+import useButtonClick from "@/hooks/buttonClick/useButtonClick.jsx";
+import handleButtonClick from "@/utils/ButtonDetails/handleButtonClick.jsx";
+import handleButtonText from "@/utils/ButtonDetails/handleButtonText";
 
 const Button = () => 
 {
@@ -11,7 +11,7 @@ const Button = () =>
     return (
         <footer className="text-center my-4">
              <button ref={ButtonRef} 
-                onClick={() => changeButtonState(setButtonClick)} 
+                onClick={() => handleButtonClick(setButtonClick)} 
                 onMouseOver={(e) => handleButtonText(e, ButtonRef.current)}
                 onMouseOut={(e) => handleButtonText(e, ButtonRef.current)}
                 className="mt-8 bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-500 hover:to-blue-700 text-white font-semibold py-2 px-6 rounded-full shadow-lg transform transition duration-200 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50">
